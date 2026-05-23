@@ -1,17 +1,17 @@
 def is_palindrome(s):
 
-    # Keep only letters and digits
+    
     cleaned = ""
 
     for ch in s:
         if ch.isalnum():
             cleaned += ch.lower()
 
-    # Check palindrome
+    
     return cleaned == cleaned[::-1]
 
 
-# Examples
+
 print(is_palindrome("A man a plan a canal Panama"))  # True
 print(is_palindrome("racecar"))                      # True
 print(is_palindrome("Hello"))                        # False
